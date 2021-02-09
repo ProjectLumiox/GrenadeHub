@@ -1,0 +1,762 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local ScreenGui = Instance.new("ScreenGui")
+local MainFrame = Instance.new("Frame")
+local WelcomeText = Instance.new("TextLabel")
+local FEScriptsButton = Instance.new("TextButton")
+local HATScriptsButton = Instance.new("TextButton")
+local CreditsText = Instance.new("TextLabel")
+local HATScripts = Instance.new("ScrollingFrame")
+local HATCar = Instance.new("TextButton")
+local HATNeptunian = Instance.new("TextButton")
+local HATSniper = Instance.new("TextButton")
+local HATBroom = Instance.new("TextButton")
+local HATMinigun = Instance.new("TextButton")
+local HATSword = Instance.new("TextButton")
+local HATScythe = Instance.new("TextButton")
+local HATPen = Instance.new("TextButton")
+local HATPen_2 = Instance.new("TextButton")
+local NetBypaz = Instance.new("TextButton")
+local TEXZXTTT = Instance.new("TextLabel")
+local FREMAAA = Instance.new("Frame")
+local FEElioBlasio = Instance.new("TextButton")
+local FEScripts = Instance.new("ScrollingFrame")
+local FESmug = Instance.new("TextButton")
+local FEKickR6 = Instance.new("TextButton")
+local FEKickR15 = Instance.new("TextButton")
+local FEDistraction = Instance.new("TextButton")
+local FETakeL = Instance.new("TextButton")
+local FEMemeDance = Instance.new("TextButton")
+local FEMemutoRun = Instance.new("TextButton")
+local NetBypass = Instance.new("TextButton")
+local CreditsText_2 = Instance.new("TextLabel")
+local Frame = Instance.new("Frame")
+local FEJoy = Instance.new("TextButton")
+local FEChill = Instance.new("TextButton")
+local FEXester = Instance.new("TextButton")
+local FENeko = Instance.new("TextButton")
+local FEBoogieDown = Instance.new("TextButton")
+local FEFloss = Instance.new("TextButton")
+local FEOrange = Instance.new("TextButton")
+local FEEnder = Instance.new("TextButton")
+local Tipz = Instance.new("Frame")
+local Tip = Instance.new("TextLabel")
+local CloseTip = Instance.new("TextButton")
+local AAAAAAAAAAAAAAAAAA = Instance.new("Frame")
+local Drag = Instance.new("Frame")
+local ImageLabel = Instance.new("ImageLabel")
+local Close = Instance.new("TextButton")
+local Minimize = Instance.new("TextButton")
+local TextLabel = Instance.new("TextLabel")
+
+--Properties:
+
+ScreenGui.Parent = game.CoreGui
+ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+MainFrame.Name = "MainFrame"
+MainFrame.Parent = ScreenGui
+MainFrame.BackgroundColor3 = Color3.fromRGB(52, 52, 52)
+MainFrame.BorderColor3 = Color3.fromRGB(39, 39, 39)
+MainFrame.BorderSizePixel = 3
+MainFrame.Position = UDim2.new(0.155956119, 0, 0.534398019, 0)
+MainFrame.Size = UDim2.new(0, 538, 0, 244)
+MainFrame.Active = true
+
+WelcomeText.Name = "WelcomeText"
+WelcomeText.Parent = MainFrame
+WelcomeText.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+WelcomeText.BackgroundTransparency = 1.000
+WelcomeText.Position = UDim2.new(0.288104087, 0, 0.102459013, 0)
+WelcomeText.Size = UDim2.new(0, 354, 0, 194)
+WelcomeText.Font = Enum.Font.SourceSans
+WelcomeText.Text = "Welcome back Guest, Thanks for using GrenadeHub!"
+WelcomeText.TextColor3 = Color3.fromRGB(125, 125, 125)
+WelcomeText.TextScaled = true
+WelcomeText.TextSize = 14.000
+WelcomeText.TextWrapped = true
+
+FEScriptsButton.Name = "FEScriptsButton"
+FEScriptsButton.Parent = MainFrame
+FEScriptsButton.BackgroundColor3 = Color3.fromRGB(52, 52, 52)
+FEScriptsButton.BorderColor3 = Color3.fromRGB(39, 39, 39)
+FEScriptsButton.BorderSizePixel = 2
+FEScriptsButton.Position = UDim2.new(0.0130111529, 0, 0.106557384, 0)
+FEScriptsButton.Size = UDim2.new(0, 124, 0, 30)
+FEScriptsButton.Font = Enum.Font.SourceSans
+FEScriptsButton.Text = "FE Scripts"
+FEScriptsButton.TextColor3 = Color3.fromRGB(131, 131, 131)
+FEScriptsButton.TextScaled = true
+FEScriptsButton.TextSize = 14.000
+FEScriptsButton.TextWrapped = true
+FEScriptsButton.MouseButton1Click:Connect(function()
+	FEScripts.Visible = true
+	HATScripts.Visible = false
+end)
+
+HATScriptsButton.Name = "HATScriptsButton"
+HATScriptsButton.Parent = MainFrame
+HATScriptsButton.BackgroundColor3 = Color3.fromRGB(52, 52, 52)
+HATScriptsButton.BorderColor3 = Color3.fromRGB(39, 39, 39)
+HATScriptsButton.BorderSizePixel = 2
+HATScriptsButton.Position = UDim2.new(0.0130111529, 0, 0.303278685, 0)
+HATScriptsButton.Size = UDim2.new(0, 124, 0, 30)
+HATScriptsButton.Font = Enum.Font.SourceSans
+HATScriptsButton.Text = "Hat Scripts"
+HATScriptsButton.TextColor3 = Color3.fromRGB(131, 131, 131)
+HATScriptsButton.TextScaled = true
+HATScriptsButton.TextSize = 14.000
+HATScriptsButton.TextWrapped = true
+HATScriptsButton.MouseButton1Click:Connect(function()
+	FEScripts.Visible = false
+	HATScripts.Visible = true
+end)
+
+CreditsText.Name = "CreditsText"
+CreditsText.Parent = MainFrame
+CreditsText.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+CreditsText.BackgroundTransparency = 1.000
+CreditsText.Position = UDim2.new(0, 0, 0.426229507, 0)
+CreditsText.Size = UDim2.new(0, 142, 0, 126)
+CreditsText.Font = Enum.Font.SourceSans
+CreditsText.Text = "UI Design Made by RedChampion#9110, Script Library and Code made by blyat#4078"
+CreditsText.TextColor3 = Color3.fromRGB(125, 125, 125)
+CreditsText.TextScaled = true
+CreditsText.TextSize = 14.000
+CreditsText.TextWrapped = true
+
+HATScripts.Name = "HATScripts"
+HATScripts.Parent = MainFrame
+HATScripts.Active = true
+HATScripts.BackgroundColor3 = Color3.fromRGB(52, 52, 52)
+HATScripts.BorderColor3 = Color3.fromRGB(39, 39, 39)
+HATScripts.BorderSizePixel = 2
+HATScripts.Position = UDim2.new(0.273234189, 0, 0.106557377, 0)
+HATScripts.Size = UDim2.new(0, 377, 0, 194)
+
+HATCar.Name = "HATCar"
+HATCar.Parent = HATScripts
+HATCar.BackgroundColor3 = Color3.fromRGB(52, 52, 52)
+HATCar.BorderColor3 = Color3.fromRGB(39, 39, 39)
+HATCar.BorderSizePixel = 2
+HATCar.Position = UDim2.new(0.0291777197, 0, 0.0153105278, 0)
+HATCar.Size = UDim2.new(0, 114, 0, 29)
+HATCar.Font = Enum.Font.SourceSans
+HATCar.Text = "Car (Eltoría RS750)"
+HATCar.TextColor3 = Color3.fromRGB(131, 131, 131)
+HATCar.TextScaled = true
+HATCar.TextSize = 14.000
+HATCar.TextWrapped = true
+HATCar.MouseButton1Click:Connect(function()
+	loadstring(game:HttpGet('https://raw.githubusercontent.com/MonkoTubeYT/carscript/master/!carscript.lua',true))()
+end)
+
+HATNeptunian.Name = "HATNeptunian"
+HATNeptunian.Parent = HATScripts
+HATNeptunian.BackgroundColor3 = Color3.fromRGB(52, 52, 52)
+HATNeptunian.BorderColor3 = Color3.fromRGB(39, 39, 39)
+HATNeptunian.BorderSizePixel = 2
+HATNeptunian.Position = UDim2.new(0.360742688, 0, 0.0142542496, 0)
+HATNeptunian.Size = UDim2.new(0, 104, 0, 29)
+HATNeptunian.Font = Enum.Font.SourceSans
+HATNeptunian.Text = "Neptunian V (Any Greatsword)"
+HATNeptunian.TextColor3 = Color3.fromRGB(131, 131, 131)
+HATNeptunian.TextScaled = true
+HATNeptunian.TextSize = 14.000
+HATNeptunian.TextWrapped = true
+HATNeptunian.MouseButton1Click:Connect(function()
+	loadstring(game:HttpGet(('https://raw.githubusercontent.com/mememasterboi/a-lot-of-scripts/master/Obfuscate%20Template.txt'),true))()
+end)
+
+HATSniper.Name = "HATSniper"
+HATSniper.Parent = HATScripts
+HATSniper.BackgroundColor3 = Color3.fromRGB(52, 52, 52)
+HATSniper.BorderColor3 = Color3.fromRGB(39, 39, 39)
+HATSniper.BorderSizePixel = 2
+HATSniper.Position = UDim2.new(0.668434978, 0, 0.0142542496, 0)
+HATSniper.Size = UDim2.new(0, 104, 0, 29)
+HATSniper.Font = Enum.Font.SourceSans
+HATSniper.Text = "Sniper (Cyberpunk Sniper)"
+HATSniper.TextColor3 = Color3.fromRGB(131, 131, 131)
+HATSniper.TextScaled = true
+HATSniper.TextSize = 14.000
+HATSniper.TextWrapped = true
+HATSniper.MouseButton1Click:Connect(function()
+	loadstring(game:HttpGet("https://pastebin.com/raw/dtz7qGBg", true))()
+end)
+
+HATBroom.Name = "HATBroom"
+HATBroom.Parent = HATScripts
+HATBroom.BackgroundColor3 = Color3.fromRGB(52, 52, 52)
+HATBroom.BorderColor3 = Color3.fromRGB(39, 39, 39)
+HATBroom.BorderSizePixel = 2
+HATBroom.Position = UDim2.new(0.0291776378, 0, 0.0976059884, 0)
+HATBroom.Size = UDim2.new(0, 114, 0, 29)
+HATBroom.Font = Enum.Font.SourceSans
+HATBroom.Text = "Broom (Witch Wizard Broom Classic)"
+HATBroom.TextColor3 = Color3.fromRGB(131, 131, 131)
+HATBroom.TextScaled = true
+HATBroom.TextSize = 14.000
+HATBroom.TextWrapped = true
+HATBroom.MouseButton1Click:Connect(function()
+	loadstring(game:HttpGet("https://pastebin.com/raw/PcP5cEYU", true))()
+end)
+
+HATMinigun.Name = "HATMinigun"
+HATMinigun.Parent = HATScripts
+HATMinigun.BackgroundColor3 = Color3.fromRGB(52, 52, 52)
+HATMinigun.BorderColor3 = Color3.fromRGB(39, 39, 39)
+HATMinigun.BorderSizePixel = 2
+HATMinigun.Position = UDim2.new(0.360742718, 0, 0.0964347869, 0)
+HATMinigun.Size = UDim2.new(0, 104, 0, 30)
+HATMinigun.Font = Enum.Font.SourceSans
+HATMinigun.Text = "Minigun (Type 40 Juggernauts Chain Gun)"
+HATMinigun.TextColor3 = Color3.fromRGB(131, 131, 131)
+HATMinigun.TextScaled = true
+HATMinigun.TextSize = 14.000
+HATMinigun.TextWrapped = true
+HATMinigun.MouseButton1Click:Connect(function()
+	loadstring(game:HttpGet("https://pastebin.com/raw/sK9EUPE6", true))()
+end)
+
+HATSword.Name = "HATSword"
+HATSword.Parent = HATScripts
+HATSword.BackgroundColor3 = Color3.fromRGB(52, 52, 52)
+HATSword.BorderColor3 = Color3.fromRGB(39, 39, 39)
+HATSword.BorderSizePixel = 2
+HATSword.Position = UDim2.new(0.668435037, 0, 0.0964347869, 0)
+HATSword.Size = UDim2.new(0, 104, 0, 30)
+HATSword.Font = Enum.Font.SourceSans
+HATSword.Text = "RB Neptunian (Russo’s Sword of Truth)"
+HATSword.TextColor3 = Color3.fromRGB(131, 131, 131)
+HATSword.TextScaled = true
+HATSword.TextSize = 14.000
+HATSword.TextWrapped = true
+HATSword.MouseButton1Click:Connect(function()
+	loadstring(game:HttpGet("https://pastebin.com/raw/gDi503fB", true))()
+end)
+
+HATScythe.Name = "HATScythe"
+HATScythe.Parent = HATScripts
+HATScythe.BackgroundColor3 = Color3.fromRGB(52, 52, 52)
+HATScythe.BorderColor3 = Color3.fromRGB(39, 39, 39)
+HATScythe.BorderSizePixel = 2
+HATScythe.Position = UDim2.new(0.0289999992, 0, 0.180000007, 0)
+HATScythe.Size = UDim2.new(0, 114, 0, 29)
+HATScythe.Font = Enum.Font.SourceSans
+HATScythe.Text = "Scythe (Christmas Scythe)"
+HATScythe.TextColor3 = Color3.fromRGB(131, 131, 131)
+HATScythe.TextScaled = true
+HATScythe.TextSize = 14.000
+HATScythe.TextWrapped = true
+HATScythe.MouseButton1Click:Connect(function()
+	loadstring(game:HttpGet("https://pastebin.com/raw/Ak4YmC3f", true))()
+end)
+
+HATPen.Name = "HATPen"
+HATPen.Parent = HATScripts
+HATPen.BackgroundColor3 = Color3.fromRGB(52, 52, 52)
+HATPen.BorderColor3 = Color3.fromRGB(39, 39, 39)
+HATPen.BorderSizePixel = 2
+HATPen.Position = UDim2.new(0.360564947, 0, 0.180000007, 0)
+HATPen.Size = UDim2.new(0, 104, 0, 29)
+HATPen.Font = Enum.Font.SourceSans
+HATPen.Text = "Pen (Corrupt Demonic Greatsword)"
+HATPen.TextColor3 = Color3.fromRGB(131, 131, 131)
+HATPen.TextScaled = true
+HATPen.TextSize = 14.000
+HATPen.TextWrapped = true
+HATPen.MouseButton1Click:Connect(function()
+	loadstring(game:HttpGet("https://pastebin.com/raw/MypKaZKB", true))()
+end)
+
+HATPen_2.Name = "HATPen"
+HATPen_2.Parent = HATScripts
+HATPen_2.BackgroundColor3 = Color3.fromRGB(52, 52, 52)
+HATPen_2.BorderColor3 = Color3.fromRGB(39, 39, 39)
+HATPen_2.BorderSizePixel = 2
+HATPen_2.Position = UDim2.new(0.668257236, 0, 0.178149104, 0)
+HATPen_2.Size = UDim2.new(0, 104, 0, 29)
+HATPen_2.Font = Enum.Font.SourceSans
+HATPen_2.Text = "Trash Can (Trash Can, Trash Can Lid and Destructive aura)"
+HATPen_2.TextColor3 = Color3.fromRGB(131, 131, 131)
+HATPen_2.TextScaled = true
+HATPen_2.TextSize = 14.000
+HATPen_2.TextWrapped = true
+HATPen_2.MouseButton1Click:Connect(function()
+	loadstring(game:HttpGet("https://pastebin.com/raw/LHRiFVYm", true))()
+end)
+
+
+NetBypaz.Name = "NetBypaz"
+NetBypaz.Parent = HATScripts
+NetBypaz.BackgroundColor3 = Color3.fromRGB(52, 52, 52)
+NetBypaz.BorderColor3 = Color3.fromRGB(39, 39, 39)
+NetBypaz.BorderSizePixel = 2
+NetBypaz.Position = UDim2.new(0.33934477, 0, 0.922257066, 0)
+NetBypaz.Size = UDim2.new(0, 111, 0, 29)
+NetBypaz.Font = Enum.Font.SourceSans
+NetBypaz.Text = "Network Bypass"
+NetBypaz.TextColor3 = Color3.fromRGB(131, 131, 131)
+NetBypaz.TextScaled = true
+NetBypaz.TextSize = 14.000
+NetBypaz.TextWrapped = true
+NetBypaz.MouseButton1Click:Connect(function()
+	loadstring(game:HttpGet("https://ghostbin.co/paste/dmwp8/raw", true))()
+end)
+
+TEXZXTTT.Name = "TEXZXTTT"
+TEXZXTTT.Parent = HATScripts
+TEXZXTTT.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TEXZXTTT.BackgroundTransparency = 1.000
+TEXZXTTT.Position = UDim2.new(0.0478302464, 0, 0.850819707, 0)
+TEXZXTTT.Size = UDim2.new(0, 332, 0, 28)
+TEXZXTTT.Font = Enum.Font.SourceSans
+TEXZXTTT.Text = "If some FE scripts won't work. press the button below, it should fix it"
+TEXZXTTT.TextColor3 = Color3.fromRGB(125, 125, 125)
+TEXZXTTT.TextScaled = true
+TEXZXTTT.TextSize = 14.000
+TEXZXTTT.TextWrapped = true
+
+FREMAAA.Name = "FREMAAA"
+FREMAAA.Parent = HATScripts
+FREMAAA.Active = true
+FREMAAA.BackgroundColor3 = Color3.fromRGB(39, 39, 39)
+FREMAAA.BorderSizePixel = 0
+FREMAAA.Position = UDim2.new(-0.0461777113, 0, 0.825700045, 0)
+FREMAAA.Size = UDim2.new(0, 400, 0, 2)
+
+FEElioBlasio.Name = "FEElioBlasio"
+FEElioBlasio.Parent = HATScripts
+FEElioBlasio.BackgroundColor3 = Color3.fromRGB(52, 52, 52)
+FEElioBlasio.BorderColor3 = Color3.fromRGB(39, 39, 39)
+FEElioBlasio.BorderSizePixel = 2
+FEElioBlasio.Position = UDim2.new(0.0285702832, 0, 0.258474946, 0)
+FEElioBlasio.Size = UDim2.new(0, 114, 0, 28)
+FEElioBlasio.Font = Enum.Font.SourceSans
+FEElioBlasio.Text = "Rifle (METAL x LIGHTSEER 77)"
+FEElioBlasio.TextColor3 = Color3.fromRGB(131, 131, 131)
+FEElioBlasio.TextScaled = true
+FEElioBlasio.TextSize = 14.000
+FEElioBlasio.TextWrapped = true
+FEElioBlasio.MouseButton1Click:Connect(function()
+	loadstring(game:HttpGetAsync("https://pastebin.com/raw/Uqgjgieq"))()
+end)
+
+FEScripts.Name = "FEScripts"
+FEScripts.Parent = MainFrame
+FEScripts.Active = true
+FEScripts.BackgroundColor3 = Color3.fromRGB(52, 52, 52)
+FEScripts.BorderColor3 = Color3.fromRGB(39, 39, 39)
+FEScripts.BorderSizePixel = 2
+FEScripts.Position = UDim2.new(0.273234159, 0, 0.106557377, 0)
+FEScripts.Size = UDim2.new(0, 377, 0, 194)
+FEScripts.Visible = false
+
+FESmug.Name = "FESmug"
+FESmug.Parent = FEScripts
+FESmug.BackgroundColor3 = Color3.fromRGB(52, 52, 52)
+FESmug.BorderColor3 = Color3.fromRGB(39, 39, 39)
+FESmug.BorderSizePixel = 2
+FESmug.Position = UDim2.new(0.0291777197, 0, 0.01862894, 0)
+FESmug.Size = UDim2.new(0, 103, 0, 29)
+FESmug.Font = Enum.Font.SourceSans
+FESmug.Text = "Smug Dance"
+FESmug.TextColor3 = Color3.fromRGB(131, 131, 131)
+FESmug.TextScaled = true
+FESmug.TextSize = 14.000
+FESmug.TextWrapped = true
+FESmug.MouseButton1Click:Connect(function()
+	loadstring(game:HttpGet("https://pastebin.com/raw/NKub3B4R", true))()
+end)
+
+FEKickR6.Name = "FEKickR6"
+FEKickR6.Parent = FEScripts
+FEKickR6.BackgroundColor3 = Color3.fromRGB(52, 52, 52)
+FEKickR6.BorderColor3 = Color3.fromRGB(39, 39, 39)
+FEKickR6.BorderSizePixel = 2
+FEKickR6.Position = UDim2.new(0.323607445, 0, 0.0200704187, 0)
+FEKickR6.Size = UDim2.new(0, 111, 0, 29)
+FEKickR6.Font = Enum.Font.SourceSans
+FEKickR6.Text = "Kick Dance R6"
+FEKickR6.TextColor3 = Color3.fromRGB(131, 131, 131)
+FEKickR6.TextScaled = true
+FEKickR6.TextSize = 14.000
+FEKickR6.TextWrapped = true
+FEKickR6.MouseButton1Click:Connect(function()
+	loadstring(game:HttpGet("https://pastebin.com/raw/1P37qYeV", true))()
+end)
+
+
+
+FEKickR15.Name = "FEKickR15"
+FEKickR15.Parent = FEScripts
+FEKickR15.BackgroundColor3 = Color3.fromRGB(52, 52, 52)
+FEKickR15.BorderColor3 = Color3.fromRGB(39, 39, 39)
+FEKickR15.BorderSizePixel = 2
+FEKickR15.Position = UDim2.new(0.641909838, 0, 0.0200704262, 0)
+FEKickR15.Size = UDim2.new(0, 111, 0, 29)
+FEKickR15.Font = Enum.Font.SourceSans
+FEKickR15.Text = "Kick Dance R15"
+FEKickR15.TextColor3 = Color3.fromRGB(131, 131, 131)
+FEKickR15.TextScaled = true
+FEKickR15.TextSize = 14.000
+FEKickR15.TextWrapped = true
+FEKickR15.MouseButton1Click:Connect(function()
+	loadstring(game:HttpGet("https://pastebin.com/raw/HJcdfUTQ", true))()
+end)
+
+
+FEDistraction.Name = "FEDistraction"
+FEDistraction.Parent = FEScripts
+FEDistraction.BackgroundColor3 = Color3.fromRGB(52, 52, 52)
+FEDistraction.BorderColor3 = Color3.fromRGB(39, 39, 39)
+FEDistraction.BorderSizePixel = 2
+FEDistraction.Position = UDim2.new(0.0289999992, 0, 0.167999998, 0)
+FEDistraction.Size = UDim2.new(0, 103, 0, 28)
+FEDistraction.Font = Enum.Font.SourceSans
+FEDistraction.Text = "Distraction"
+FEDistraction.TextColor3 = Color3.fromRGB(131, 131, 131)
+FEDistraction.TextScaled = true
+FEDistraction.TextSize = 14.000
+FEDistraction.TextWrapped = true
+FEDistraction.MouseButton1Click:Connect(function()
+	loadstring(game:HttpGet("https://pastebin.com/raw/2tJBN38N", true))()
+end)
+
+FETakeL.Name = "FETakeL"
+FETakeL.Parent = FEScripts
+FETakeL.BackgroundColor3 = Color3.fromRGB(52, 52, 52)
+FETakeL.BorderColor3 = Color3.fromRGB(39, 39, 39)
+FETakeL.BorderSizePixel = 2
+FETakeL.Position = UDim2.new(0.323607415, 0, 0.091328308, 0)
+FETakeL.Size = UDim2.new(0, 111, 0, 29)
+FETakeL.Font = Enum.Font.SourceSans
+FETakeL.Text = "Take the L"
+FETakeL.TextColor3 = Color3.fromRGB(131, 131, 131)
+FETakeL.TextScaled = true
+FETakeL.TextSize = 14.000
+FETakeL.TextWrapped = true
+FETakeL.MouseButton1Click:Connect(function()
+	loadstring(game:HttpGet("https://pastebin.com/raw/VkWkuyzc", true))()
+end)
+
+
+FEMemeDance.Name = "FEMemeDance"
+FEMemeDance.Parent = FEScripts
+FEMemeDance.BackgroundColor3 = Color3.fromRGB(52, 52, 52)
+FEMemeDance.BorderColor3 = Color3.fromRGB(39, 39, 39)
+FEMemeDance.BorderSizePixel = 2
+FEMemeDance.Position = UDim2.new(0.641909838, 0, 0.091685012, 0)
+FEMemeDance.Size = UDim2.new(0, 111, 0, 29)
+FEMemeDance.Font = Enum.Font.SourceSans
+FEMemeDance.Text = "Ultimate Meme Dance"
+FEMemeDance.TextColor3 = Color3.fromRGB(131, 131, 131)
+FEMemeDance.TextScaled = true
+FEMemeDance.TextSize = 14.000
+FEMemeDance.TextWrapped = true
+FEMemeDance.MouseButton1Click:Connect(function()
+	loadstring(game:HttpGetAsync("https://pastebin.com/raw/0QfjMKrF"))()
+end)
+
+FEMemutoRun.Name = "FEMemutoRun"
+FEMemutoRun.Parent = FEScripts
+FEMemutoRun.BackgroundColor3 = Color3.fromRGB(52, 52, 52)
+FEMemutoRun.BorderColor3 = Color3.fromRGB(39, 39, 39)
+FEMemutoRun.BorderSizePixel = 2
+FEMemutoRun.Position = UDim2.new(0.0291777253, 0, 0.0923994035, 0)
+FEMemutoRun.Size = UDim2.new(0, 103, 0, 29)
+FEMemutoRun.Font = Enum.Font.SourceSans
+FEMemutoRun.Text = "Memuto Run"
+FEMemutoRun.TextColor3 = Color3.fromRGB(131, 131, 131)
+FEMemutoRun.TextScaled = true
+FEMemutoRun.TextSize = 14.000
+FEMemutoRun.TextWrapped = true
+FEMemutoRun.MouseButton1Click:Connect(function()
+	loadstring(game:HttpGetAsync("https://pastebin.com/PyMjdpRQ"))() 
+end)
+
+
+NetBypass.Name = "NetBypass"
+NetBypass.Parent = FEScripts
+NetBypass.BackgroundColor3 = Color3.fromRGB(52, 52, 52)
+NetBypass.BorderColor3 = Color3.fromRGB(39, 39, 39)
+NetBypass.BorderSizePixel = 2
+NetBypass.Position = UDim2.new(0.33934477, 0, 0.922257066, 0)
+NetBypass.Size = UDim2.new(0, 111, 0, 29)
+NetBypass.Font = Enum.Font.SourceSans
+NetBypass.Text = "Network Bypass"
+NetBypass.TextColor3 = Color3.fromRGB(131, 131, 131)
+NetBypass.TextScaled = true
+NetBypass.TextSize = 14.000
+NetBypass.TextWrapped = true
+NetBypass.MouseButton1Click:Connect(function()
+	loadstring(game:HttpGet("https://ghostbin.co/paste/dmwp8/raw", true))()
+end)
+
+CreditsText_2.Name = "CreditsText"
+CreditsText_2.Parent = FEScripts
+CreditsText_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+CreditsText_2.BackgroundTransparency = 1.000
+CreditsText_2.Position = UDim2.new(0.0478302464, 0, 0.850819707, 0)
+CreditsText_2.Size = UDim2.new(0, 332, 0, 28)
+CreditsText_2.Font = Enum.Font.SourceSans
+CreditsText_2.Text = "If some FE scripts won't work. press the button below, it should fix it"
+CreditsText_2.TextColor3 = Color3.fromRGB(125, 125, 125)
+CreditsText_2.TextScaled = true
+CreditsText_2.TextSize = 14.000
+CreditsText_2.TextWrapped = true
+
+Frame.Parent = FEScripts
+Frame.Active = true
+Frame.BackgroundColor3 = Color3.fromRGB(39, 39, 39)
+Frame.BorderSizePixel = 0
+Frame.Position = UDim2.new(-0.0461777113, 0, 0.825700045, 0)
+Frame.Size = UDim2.new(0, 400, 0, 2)
+
+FEJoy.Name = "FEJoy"
+FEJoy.Parent = FEScripts
+FEJoy.BackgroundColor3 = Color3.fromRGB(52, 52, 52)
+FEJoy.BorderColor3 = Color3.fromRGB(39, 39, 39)
+FEJoy.BorderSizePixel = 2
+FEJoy.Position = UDim2.new(0.323000014, 0, 0.169, 0)
+FEJoy.Size = UDim2.new(0, 111, 0, 28)
+FEJoy.Font = Enum.Font.SourceSans
+FEJoy.Text = "FE Joy"
+FEJoy.TextColor3 = Color3.fromRGB(131, 131, 131)
+FEJoy.TextScaled = true
+FEJoy.TextSize = 14.000
+FEJoy.TextWrapped = true
+FEJoy.MouseButton1Click:Connect(function()
+	loadstring(game:HttpGetAsync("https://pastebin.com/raw/LEAQuKj0"))()
+end)
+
+FEChill.Name = "FEChill"
+FEChill.Parent = FEScripts
+FEChill.BackgroundColor3 = Color3.fromRGB(52, 52, 52)
+FEChill.BorderColor3 = Color3.fromRGB(39, 39, 39)
+FEChill.BorderSizePixel = 2
+FEChill.Position = UDim2.new(0.641302407, 0, 0.169, 0)
+FEChill.Size = UDim2.new(0, 111, 0, 28)
+FEChill.Font = Enum.Font.SourceSans
+FEChill.Text = "FE Chill"
+FEChill.TextColor3 = Color3.fromRGB(131, 131, 131)
+FEChill.TextScaled = true
+FEChill.TextSize = 14.000
+FEChill.TextWrapped = true
+FEChill.MouseButton1Click:Connect(function()
+	loadstring(game:HttpGetAsync("https://pastebin.com/raw/XmHFdTij"))()
+end)
+
+FEXester.Name = "FEXester"
+FEXester.Parent = FEScripts
+FEXester.BackgroundColor3 = Color3.fromRGB(52, 52, 52)
+FEXester.BorderColor3 = Color3.fromRGB(39, 39, 39)
+FEXester.BorderSizePixel = 2
+FEXester.Position = UDim2.new(0.0289999992, 0, 0.23767212, 0)
+FEXester.Size = UDim2.new(0, 103, 0, 28)
+FEXester.Font = Enum.Font.SourceSans
+FEXester.Text = "Xester"
+FEXester.TextColor3 = Color3.fromRGB(131, 131, 131)
+FEXester.TextScaled = true
+FEXester.TextSize = 14.000
+FEXester.TextWrapped = true
+FEXester.MouseButton1Click:Connect(function()
+	loadstring(game:HttpGetAsync("https://pastebin.com/raw/RPwyPvEi"))()
+end)
+
+FENeko.Name = "FENeko"
+FENeko.Parent = FEScripts
+FENeko.BackgroundColor3 = Color3.fromRGB(52, 52, 52)
+FENeko.BorderColor3 = Color3.fromRGB(39, 39, 39)
+FENeko.BorderSizePixel = 2
+FENeko.Position = UDim2.new(0.323000014, 0, 0.238672137, 0)
+FENeko.Size = UDim2.new(0, 111, 0, 28)
+FENeko.Font = Enum.Font.SourceSans
+FENeko.Text = "Neko"
+FENeko.TextColor3 = Color3.fromRGB(131, 131, 131)
+FENeko.TextScaled = true
+FENeko.TextSize = 14.000
+FENeko.TextWrapped = true
+FENeko.MouseButton1Click:Connect(function()
+	loadstring(game:HttpGetAsync("https://pastebin.com/raw/7i7CsTPe "))()
+end)
+
+FEBoogieDown.Name = "FEBoogieDown"
+FEBoogieDown.Parent = FEScripts
+FEBoogieDown.BackgroundColor3 = Color3.fromRGB(52, 52, 52)
+FEBoogieDown.BorderColor3 = Color3.fromRGB(39, 39, 39)
+FEBoogieDown.BorderSizePixel = 2
+FEBoogieDown.Position = UDim2.new(0.641302407, 0, 0.238672137, 0)
+FEBoogieDown.Size = UDim2.new(0, 111, 0, 28)
+FEBoogieDown.Font = Enum.Font.SourceSans
+FEBoogieDown.Text = "FE Boogie Down"
+FEBoogieDown.TextColor3 = Color3.fromRGB(131, 131, 131)
+FEBoogieDown.TextScaled = true
+FEBoogieDown.TextSize = 14.000
+FEBoogieDown.TextWrapped = true
+FEBoogieDown.MouseButton1Click:Connect(function()
+	loadstring(game:HttpGetAsync("https://pastebin.com/raw/6DzXfYzy"))()
+end)
+
+FEFloss.Name = "FEFloss"
+FEFloss.Parent = FEScripts
+FEFloss.BackgroundColor3 = Color3.fromRGB(52, 52, 52)
+FEFloss.BorderColor3 = Color3.fromRGB(39, 39, 39)
+FEFloss.BorderSizePixel = 2
+FEFloss.Position = UDim2.new(0.0289999992, 0, 0.315540969, 0)
+FEFloss.Size = UDim2.new(0, 103, 0, 28)
+FEFloss.Font = Enum.Font.SourceSans
+FEFloss.Text = "Floss Dance"
+FEFloss.TextColor3 = Color3.fromRGB(131, 131, 131)
+FEFloss.TextScaled = true
+FEFloss.TextSize = 14.000
+FEFloss.TextWrapped = true
+FEFloss.MouseButton1Click:Connect(function()
+	loadstring(game:HttpGetAsync("https://pastebin.com/raw/JfyvWHLf"))()
+end)
+
+FEOrange.Name = "FEOrange"
+FEOrange.Parent = FEScripts
+FEOrange.BackgroundColor3 = Color3.fromRGB(52, 52, 52)
+FEOrange.BorderColor3 = Color3.fromRGB(39, 39, 39)
+FEOrange.BorderSizePixel = 2
+FEOrange.Position = UDim2.new(0.323000014, 0, 0.314491808, 0)
+FEOrange.Size = UDim2.new(0, 111, 0, 28)
+FEOrange.Font = Enum.Font.SourceSans
+FEOrange.Text = "Orange Justice"
+FEOrange.TextColor3 = Color3.fromRGB(131, 131, 131)
+FEOrange.TextScaled = true
+FEOrange.TextSize = 14.000
+FEOrange.TextWrapped = true
+FEOrange.MouseButton1Click:Connect(function()
+	loadstring(game:HttpGetAsync("https://pastebin.com/raw/Efg0DgkP"))()
+end)
+
+FEEnder.Name = "FEEnder"
+FEEnder.Parent = FEScripts
+FEEnder.BackgroundColor3 = Color3.fromRGB(52, 52, 52)
+FEEnder.BorderColor3 = Color3.fromRGB(39, 39, 39)
+FEEnder.BorderSizePixel = 2
+FEEnder.Position = UDim2.new(0.641302407, 0, 0.314491808, 0)
+FEEnder.Size = UDim2.new(0, 111, 0, 28)
+FEEnder.Font = Enum.Font.SourceSans
+FEEnder.Text = "FE Ender"
+FEEnder.TextColor3 = Color3.fromRGB(131, 131, 131)
+FEEnder.TextScaled = true
+FEEnder.TextSize = 14.000
+FEEnder.TextWrapped = true
+FEEnder.MouseButton1Click:Connect(function()
+	loadstring(game:HttpGetAsync("https://pastebin.com/raw/bndCgupK"))()
+end)
+
+Tipz.Name = "Tipz"
+Tipz.Parent = MainFrame
+Tipz.BackgroundColor3 = Color3.fromRGB(52, 52, 52)
+Tipz.BorderColor3 = Color3.fromRGB(39, 39, 39)
+Tipz.BorderSizePixel = 3
+Tipz.Position = UDim2.new(1.06505573, 0, -0.06967213, 0)
+Tipz.Size = UDim2.new(0, 153, 0, 79)
+
+Tip.Name = "Tip"
+Tip.Parent = Tipz
+Tip.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Tip.BackgroundTransparency = 1.000
+Tip.Position = UDim2.new(-0.00300069572, 0, -0.0181967169, 0)
+Tip.Size = UDim2.new(0, 153, 0, 99)
+Tip.Font = Enum.Font.SourceSans
+Tip.Text = "Tip: The words in brackets are the items, that you must have equipped to run the script."
+Tip.TextColor3 = Color3.fromRGB(125, 125, 125)
+Tip.TextSize = 14.000
+Tip.TextWrapped = true
+
+CloseTip.Name = "CloseTip"
+CloseTip.Parent = Tipz
+CloseTip.BackgroundColor3 = Color3.fromRGB(255, 44, 7)
+CloseTip.BorderColor3 = Color3.fromRGB(39, 39, 39)
+CloseTip.Position = UDim2.new(0.869281054, 0, 0, 0)
+CloseTip.Size = UDim2.new(0, 20, 0, 22)
+CloseTip.Font = Enum.Font.SourceSans
+CloseTip.Text = "X"
+CloseTip.TextColor3 = Color3.fromRGB(0, 0, 0)
+CloseTip.TextSize = 14.000
+CloseTip.MouseButton1Click:Connect(function()
+	Tipz.Visible = false
+end)
+
+AAAAAAAAAAAAAAAAAA.Name = "AAAAAAAAAAAAAAAAAA"
+AAAAAAAAAAAAAAAAAA.Parent = Tipz
+AAAAAAAAAAAAAAAAAA.Active = true
+AAAAAAAAAAAAAAAAAA.BackgroundColor3 = Color3.fromRGB(39, 39, 39)
+AAAAAAAAAAAAAAAAAA.BorderSizePixel = 0
+AAAAAAAAAAAAAAAAAA.Position = UDim2.new(-0.00300069572, 0, 0.266332984, 0)
+AAAAAAAAAAAAAAAAAA.Size = UDim2.new(0, 153, 0, 2)
+
+Drag.Name = "Drag"
+Drag.Parent = ScreenGui
+Drag.BackgroundColor3 = Color3.fromRGB(52, 52, 52)
+Drag.BorderColor3 = Color3.fromRGB(39, 39, 39)
+Drag.BorderSizePixel = 3
+Drag.Position = UDim2.new(0.155956119, 0, 0.502457023, 0)
+Drag.Size = UDim2.new(0, 538, 0, 27)
+
+ImageLabel.Parent = Drag
+ImageLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ImageLabel.BackgroundTransparency = 1.000
+ImageLabel.Position = UDim2.new(0.0111524165, 0, 0.0770365372, 0)
+ImageLabel.Size = UDim2.new(-0.00185873604, 19, 0.111110687, 19)
+ImageLabel.Image = "rbxassetid://168510968"
+
+Close.Name = "Close"
+Close.Parent = Drag
+Close.BackgroundColor3 = Color3.fromRGB(52, 52, 52)
+Close.BorderColor3 = Color3.fromRGB(39, 39, 39)
+Close.BorderSizePixel = 2
+Close.Position = UDim2.new(0.946096659, 0, 0, 0)
+Close.Size = UDim2.new(0, 29, 0, 27)
+Close.Font = Enum.Font.SourceSans
+Close.Text = "X"
+Close.TextColor3 = Color3.fromRGB(131, 131, 131)
+Close.TextScaled = true
+Close.TextSize = 14.000
+Close.TextWrapped = true
+Close.MouseButton1Click:Connect(function()
+	MainFrame.Visible = false
+	Drag.Visible = false
+end)
+
+Minimize.Name = "Minimize"
+Minimize.Parent = Drag
+Minimize.BackgroundColor3 = Color3.fromRGB(52, 52, 52)
+Minimize.BorderColor3 = Color3.fromRGB(39, 39, 39)
+Minimize.BorderSizePixel = 2
+Minimize.Position = UDim2.new(0.892193317, 0, 0, 0)
+Minimize.Size = UDim2.new(0, 29, 0, 27)
+Minimize.Font = Enum.Font.SourceSans
+Minimize.Text = "-"
+Minimize.TextColor3 = Color3.fromRGB(131, 131, 131)
+Minimize.TextScaled = true
+Minimize.TextSize = 14.000
+Minimize.TextWrapped = true
+Minimize.MouseButton1Click:Connect(function()
+	if MainFrame.Visible == true  then
+		MainFrame.Visible = false
+	else
+		MainFrame.Visible = true
+	end
+end)
+
+TextLabel.Parent = Drag
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.BackgroundTransparency = 1.000
+TextLabel.Position = UDim2.new(0.0446096659, 0, 0.0770370364, 0)
+TextLabel.Size = UDim2.new(0, 107, 0, 22)
+TextLabel.Font = Enum.Font.SourceSans
+TextLabel.Text = "GrenadeHub"
+TextLabel.TextColor3 = Color3.fromRGB(125, 125, 125)
+TextLabel.TextScaled = true
+TextLabel.TextSize = 14.000
+TextLabel.TextWrapped = true
